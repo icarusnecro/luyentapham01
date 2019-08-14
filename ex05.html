@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arr2 =["Ursa Minor","Taurus","Cygnus","Lyra","Aquila", "Ursa Major","Leo"];
+    function checkStar(arr) {
+        let star = prompt("nhap ngoi sao");
+        for(let i=0;i<arr.length;i++)
+        {
+            if(star === arr[i]) {
+                document.write("da tim thay ngoi sao " + star + " tai chom sao: " + arr2[i] + '<br/>');
+                break;
+            }
+            else if(i===(arr.length-1)){
+                document.write("khong tim thay");
+            }
+        }
+    }
+    checkStar(arr1);
+</script>
+</body>
+</html>
